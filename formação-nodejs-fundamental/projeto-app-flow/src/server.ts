@@ -1,9 +1,13 @@
 import * as http from "http";
+import {getListEpisodes} from "./controllers/podecast-controller";
+
 
 
 const server = http.createServer(
-    (request: http.IncomingMessage, response: http.ServerResponse) => {
-        
+    async (request: http.IncomingMessage, response: http.ServerResponse) => {
+        if (request.method === 'GET') {
+            await getListEpisodes(request, response);
+        }
     }
 );
 
