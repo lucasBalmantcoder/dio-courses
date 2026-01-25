@@ -26,6 +26,8 @@ export const getFilterEpisodes = async (
     request: IncomingMessage, 
     response: ServerResponse
 ) => {
+
+    const querryString = request.url?.split("?")[1] ?? "";
     const content = await serviceFilterEpisodes("flow");
 
     response.writeHead(200, {
