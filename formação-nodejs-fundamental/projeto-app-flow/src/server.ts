@@ -1,5 +1,5 @@
 import * as http from "http";
-import {getListEpisodes} from "./controllers/podecast-controller";
+import {getListEpisodes} from "./controllers/podcast-controller";
 
 
 
