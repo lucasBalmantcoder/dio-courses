@@ -1,6 +1,8 @@
 import * as http from "http";
 import {getFilterEpisodes, getListEpisodes} from "./controllers/podcast-controller";
 import { log } from "console";
+import { Routes } from "./routes/routes";
+import { HttpMethod } from "./utils/http-methods";
 
 
 
@@ -14,13 +16,13 @@ const server = http.createServer(
         console.log(queryString);
         
 
-        
+
 
         // listar podcast
-        if (request.method === 'GET' && request.url === '/api/list') {
+        if (request.method === HttpMethod.GET && request.url === Routes.LIST) {
             await getListEpisodes(request, response);
         }
-        if (request.method === 'GET' && request.url === '/api/episodes') {
+        if (request.method === HttpMethod.GET && request.url === Routes.EPISODES) {
             await getFilterEpisodes(request, response);
         }
     }
