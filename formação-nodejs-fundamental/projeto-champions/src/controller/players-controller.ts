@@ -1,7 +1,11 @@
 import { Request, Response } from "express";
 import { getPlayerService } from "../services/player-service";
+import { ok } from "../utils/http-helper";
 
-export const getPlayer = (  request: Request, response: Response) => {
+export const getPlayer = async (  request: Request, response: Response) => {
         const data = getPlayerService();
-        response.status(200).json(data)
+
+        const result = await ok(data);
+
+        response.status(response.statusCode).json(result.body);
 }
