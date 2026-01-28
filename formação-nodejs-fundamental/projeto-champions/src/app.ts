@@ -10,7 +10,7 @@ function app() {
 
     app.use(express.json());
 
-    app.get("/", getPlayer)
+    
 
     return app;
         
