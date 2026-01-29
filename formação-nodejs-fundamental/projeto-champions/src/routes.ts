@@ -6,5 +6,6 @@ const routes = Router();
 routes.get("/players", playerController.getPlayer)
 routes.get("/players/:id", playerController.getPlayerById)
 routes.post("/players", playerController.postPlayer)
+routes.delete("/players/:id", playerController.deletePlayer)
 
 export default routes
