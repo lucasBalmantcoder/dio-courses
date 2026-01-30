@@ -7,5 +7,7 @@ routes.get("/players", playerController.getPlayer)
 routes.get("/players/:id", playerController.getPlayerById)
 routes.post("/players", playerController.postPlayer)
 routes.delete("/players/:id", playerController.deletePlayer)
+routes.put("/players/:id", playerController.updatePlayer)
+routes.get("/clubs", playerController.getClubs)
 
 export default routes

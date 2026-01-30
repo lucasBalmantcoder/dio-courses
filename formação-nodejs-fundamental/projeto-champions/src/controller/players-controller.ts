@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import * as service from "../services/player-service";
 import { ok } from "../utils/http-helper";
+import { StatisticsModel } from "../models/statistics-model";
 
 export const getPlayer = async (  request: Request, response: Response) => {
         const data = service.getPlayerService();
@@ -33,7 +34,7 @@ export const postPlayer = async (  request: Request, response: Response) => {
 
 }
 
-export const deletePlayer = async (request: Request, response: Response) => {
+export const deletePlayer = async (request: Request<{ id: string }>, response: Response) => {
     const id = parseInt(request.params.id);
     const httpResponse = await service.deletePlayerService(id);
 
@@ -42,4 +43,15 @@ export const deletePlayer = async (request: Request, response: Response) => {
 
 }
 
+
+export const updatePlayer = async (request: Request<{ id: string }>, response: Response) => {
+    const _response = await service.getClubsService();
+
+
+
+}
+
+export function getClubs(arg0: string, getClubs: any) {
+    throw new Error("Function not implemented.");
+}
 

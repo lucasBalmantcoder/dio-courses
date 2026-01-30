@@ -1,4 +1,5 @@
 import { PlayerModel } from "../models/player-model";
+import { StatisticsModel } from "../models/statistics-model";
 import * as playerRepository from "../repositories/player-repository";
 import * as HttpResponse from "../utils/http-helper";
 
@@ -55,3 +56,15 @@ export const deletePlayerService = async (id: number) => {
     response = await HttpResponse.ok(data);
     return response;
 }
+
+export const updatePlayerService = async (id: number, statistics: StatisticsModel) => {
+    const data = await playerRepository.findAndModifyPlayerStatistics(id, statistics);
+    const _response = await HttpResponse.ok(data);
+
+
+    return _response
+}
+export function getClubsService() {
+    throw new Error("Function not implemented.");
+}
+
