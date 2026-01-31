@@ -1,27 +1,27 @@
 {
-  "name": "projeto-champions",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dist": "tsup src",
-    "start:dev": "tsx --env-file=.env src/server.ts",
-    "start:watch": "tsx --env-file=.env watch src/server.ts",
-    "start:dist": "npm run dist && node dist/src/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "tsup": "^8.5.1",
-    "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1"
-  }
+    "name": "projeto-champions",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dist": "tsup src",
+        "start:dev": "tsx --env-file=.env src/server.ts",
+        "start:watch": "tsx --env-file=.env watch src/server.ts",
+        "start:dist": "npm run dist && node dist/src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.6",
+        "tsup": "^8.5.1",
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "cors": "^2.8.6",
+        "express": "^5.2.1"
+    }
 }
