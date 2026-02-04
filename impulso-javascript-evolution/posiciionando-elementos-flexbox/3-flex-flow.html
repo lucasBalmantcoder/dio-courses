@@ -8,6 +8,15 @@
         <style>
             .flex-container {
                 display: flex;
+                border: 2px solid black;
+                max-width: 300px;
+            }
+
+            .default {
+                flex-flow: row nowrap;
+            }
+            .wrap {
+                flex-flow: row nowrap-reverse;
             }
 
             .item {
@@ -15,19 +24,40 @@
                 margin: 5px;
                 color: white;
                 text-align: center;
-                width: 100px;
+
+                width: 50px;
                 height: 50px;
                 line-height: 50px;
-                
+            }
+
+            .nowrap {
+                flex-flow: row nowrap nowrap;
             }
         </style>
     </head>
 
-
     <body>
+        <h1>default: row nowrap</h1>
+        <div class="flex-container default">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
 
-        <div class="flex-container"> 
-            <div class="item">1</divc>
+        <h1>wrap</h1>
+        <div class="flex-container wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+        <h1>row-reverse nowrap</h1>
+        <div class="flex-container wrap-reverse">
+            <div class="item">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
             <div class="item">4</div>
