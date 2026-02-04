@@ -26,10 +26,28 @@
             .flex-end {
                 justify-content: flex-end;
             }
+
+            .center {
+                justify-content: center;
+            }
+
+            .space-between {
+                justify-content: space-between;
+            }
+
+            .space-around {
+                justify-content: space-around;
+            }
+
+            .column {
+                flex-direction: column;
+                min-height: 200px;
+            }
         </style>
     </head>
 
     <body>
+        <h1>Row</h1>
         <p>flex start</p>
         <section class="container flex-start">
             <div class="item">1</div>
@@ -37,11 +55,66 @@
             <div class="item">outro item</div>
         </section>
 
+        <p>flex-center</p>
+        <section class="container center">
+            <div class="item">1</div>
+            <div class="item">item 2</div>
+            <div class="item">outro item</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+        </section>
+
         <p>flex end</p>
         <section class="container flex-end">
             <div class="item">1</div>
             <div class="item">item 2</div>
             <div class="item">outro item</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+        </section>
+
+        <p>space between</p>
+        <section class="container space-between">
+            <div class="item">1</div>
+            <div class="item">item 2</div>
+            <div class="item">outro item</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+        </section>
+
+        <p>space around</p>
+        <section class="container space-around">
+            <div class="item">1</div>
+            <div class="item">item 2</div>
+            <div class="item">outro item</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+        </section>
+
+        <h1>Column</h1>
+        <p>flex start</p>
+        <section class="container flex-start column">
+            <div class="item">1</div>
+            <div class="item">item 2</div>
+            <div class="item">outro item</div>
+        </section>
+
+        <p>flex-center</p>
+        <section class="container center column">
+            <div class="item">1</div>
+            <div class="item">item 2</div>
+            <div class="item">outro item</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+        </section>
+
+        <p>flex end</p>
+        <section class="container flex-end column">
+            <div class="item">1</div>
+            <div class="item">item 2</div>
+            <div class="item">outro item</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
         </section>
     </body>
 </html>
