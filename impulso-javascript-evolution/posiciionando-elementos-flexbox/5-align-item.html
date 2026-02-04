@@ -7,12 +7,137 @@
 
         <style>
             .container {
-                max-width: 400px;
+                max-width: 350px;
                 border: 1px solid black;
                 margin: 0;
                 display: flex;
             }
+
+            .item {
+                background-color: blueviolet;
+                margin: 5px;
+                color: white;
+                text-align: center;
+                flex: 1;
+            }
+
+            .center {
+                align-items: center;
+            }
+
+            .stretch {
+                align-items: stretch;
+            }
+
+            .start {
+                align-items: flex-start;
+            }
+
+            .end {
+                align-items: flex-end;
+            }
+
+            .baseline {
+                align-items: baseline;
+            }
+
+            .column {
+                flex-direction: column;
+            }
+            .central {
+                height: 400px;
+                justify-content: center;
+            }
+
+            .central .item {
+                flex: 0;
+                padding: 20px;
+            }
         </style>
     </head>
-    <body></body>
+
+    <body>
+        <section>
+            <p>center</p>
+            <div class="container center">
+                <div class="item">1</div>
+                <div class="item">item 2</div>
+                <div class="item">outro item ahdiauhdaidaoh dasldajijd</div>
+            </div>
+            <p>streatch</p>
+            <div class="container flex-start">
+                <div class="item">1</div>
+                <div class="item">
+                    item 2 ahdioahosdia adiaoihdhia adoadh adoihsoi aisdaoi odha
+                </div>
+                <div class="item">outro item ahdiauhdaidaoh dasldajijd</div>
+            </div>
+
+            <p>flex-start</p>
+            <div class="container start">
+                <div class="item">1</div>
+                <div class="item">
+                    item 2 aodahdoiahd asdasd aadsa dasd asd adas ads das
+                </div>
+                <div class="item">outro item</div>
+            </div>
+
+            <p>end</p>
+            <div class="container end">
+                <div class="item">1</div>
+                <div class="item">
+                    item 2 ada sdasd adsd adsa assda sdasd asd adas asd aa asda
+                    sd
+                </div>
+                <div class="item">outro item</div>
+            </div>
+
+            <p>baseline</p>
+            <div class="container baseline">
+                <div class="item">
+                    1 adasdad ada dasd asdada asd adasda asd ad a
+                </div>
+                <div class="item">
+                    item 2 adasa d adsadasd asda dsasd ads ads asd asdads asd
+                    adsa
+                </div>
+                <div class="item">outro item</div>
+            </div>
+
+            <h1>Column</h1>
+            <p>flex-start</p>
+            <div class="container start column">
+                <div class="item">1</div>
+                <div class="item">
+                    item 2 ahdioahosdia adiaoihdhia adoadh adoihsoi aisdaoi odha
+                </div>
+                <div class="item">outro item ahdiauhdaidaoh dasldajijd</div>
+            </div>
+
+            <p>flex-end</p>
+            <div class="container end column">
+                <div class="item">1</div>
+                <div class="item">
+                    item 2 ahdioahosdia adiaoihdhia adoadh adoihsoi aisdaoi odha
+                </div>
+                <div class="item">outro item ahdiauhdaidaoh dasldajijd</div>
+            </div>
+
+            <p>flex-b</p>
+            <div class="container baseline column">
+                <div class="item">1</div>
+                <div class="item">
+                    item 2 ahdioahosdia adiaoihdhia adoadh adoihsoi aisdaoi odha
+                </div>
+                <div class="item">outro item ahdiauhdaidaoh dasldajijd</div>
+            </div>
+
+            <p>flex central a tela</p>
+            <section class="container central center">
+                <div class="item">
+                    1 ahdshasdhi asdiuhaisdhu asdihai dh adihsaidhia asdihaid
+                </div>
+            </section>
+        </section>
+    </body>
 </html>

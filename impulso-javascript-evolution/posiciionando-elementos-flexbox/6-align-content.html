@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fundamentos - align-content</title>
+        <style>
+            .container {
+                
+                height: 400px;
+                max-width: 300px;
+                
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid black;
+            }
+
+            .item {
+                
+                background-color: blueviolet;
+                margin: 5px;
+                padding: 0 5px;
+                text-align: center;
+                flex: 1;
+                text-align: center;
+                color: white;
+            }
+
+            .stretch {
+                align-content: stretch;
+            }
+
+            .center {
+                align-content: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <p>normal</p>
+        <div class="container">
+            <div class="item">
+                No design de interfaces, o padding é o espaço interno de um
+                elemento. Ele define a distância entre o conteúdo (como um texto
+                ou imagem) e a sua borda (border).
+            </div>
+            <div class="item">
+                Diferença entre Padding e Margin: Enquanto o padding cria espaço
+                dentro do elemento, a margin cria espaço fora dele, afastando-o
+                de outros elementos.
+            </div>
+        </div>
+
+        <p>center</p>
+        <div class="container">
+            <div class="item">
+                No design de interfaces, o padding é o espaço interno de um
+                elemento. Ele define a distância entre o conteúdo (como um texto
+                ou imagem) e a sua borda (border).
+            </div>
+            <div class="item">
+                Diferença entre Padding e Margin: Enquanto o padding cria espaço
+                dentro do elemento, a margin cria espaço fora dele, afastando-o
+                de outros elementos.
+            </div>
+    </body>
+</html>
