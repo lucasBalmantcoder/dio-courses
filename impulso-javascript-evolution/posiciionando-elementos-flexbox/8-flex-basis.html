@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fundamentos - flex-basis</title>
+
+        <style>
+            .flex-container {
+                max-width: 300;
+                display: flex;
+                border: 1px solid black;
+            }
+
+            .items {
+                background-color: coral;
+                color: white;
+                text-align: center;
+                margin: 5px;
+            }
+            .bauto {
+                flex-basis: auto;
+            }
+
+            .fg-1 {
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="flex-container">
+                <div class="items bauto fg-1">A</div>
+                <div class="items bauto fg-1">BBB</div>
+                <div class="items bauto fg-1">CCC</div>
+                <div class="items bauto fg-1">DEF</div>
+            </div>
+        </section>
+    </body>
+</html>
