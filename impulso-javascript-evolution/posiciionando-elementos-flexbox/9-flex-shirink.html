@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fundamentos - flex-shirink</title>
+
+        <style>
+            .flex-container {
+                display: flex;
+                border: 4px solid black;
+                max-width: 350px;
+            }
+
+            .item {
+                background-color: orangered;
+                font-size: 24px;
+                text-align: center;
+                margin: 5px;
+            }
+
+            .s1 {
+                flex-shrink: 1;
+            }
+
+            .fg1 {
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <p>flex-shirink 1</p>
+        <div class="flex-container">
+            <div class="item s1 fg1">A</div>
+            <div class="item s1 fg1">B</div>
+            <div class="item s1 fg1">C</div>
+            <div class="item s1 fg1">D</div>
+            <div class="item s1 fg1">E</div>
+            <div class="item s1 fg1">B</div>
+            <div class="item s1 fg1">C</div>
+            <div class="item s1 fg1">D</div>
+            <div class="item s1 fg1">E</div>
+        </div>
+        <p>flex-shirink 2</p>
+        <div class="flex-container">
+            <div class="item s1 fg1">A</div>
+            <div class="item s1 fg1">B adhaishd asiduhaidsh iaisudhaiuhd</div>
+            <div class="item s1 fg1">C</div>
+        </div>
+    </body>
+</html>

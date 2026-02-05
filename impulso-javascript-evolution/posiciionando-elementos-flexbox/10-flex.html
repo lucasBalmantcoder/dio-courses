@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fundamentos flex</title>
+
+        <style>
+            .flex-container {
+                display: flex;
+                border: 1px solid black;
+                max-width: 400px;
+            }
+
+            .item {
+                background-color: brown;
+                color: white;
+                font-size: 24px;
+                text-align: center;
+                margin: 5px;
+            }
+
+            .flex-1 {
+                flex: 1;
+                /* grow: 1, shirink: 1, basis: 1*/
+            }
+
+            .flex-2 {
+                flex: 2;
+            }
+
+            .largura {
+                width: 200px;
+                /* min-width: 250px; */
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <p>flex</p>
+            <div class="flex-container">
+                <div class="item flex-1">ABCSS</div>
+                <div class="item flex-1">ABCSS</div>
+                <div class="item flex-1">ABCSS</div>
+                <div class="item flex-1">ABCSS</div>
+            </div>
+
+            <p>flex mix</p>
+            <div class="flex-container">
+                <div class="item flex-2">ABCSS</div>
+                <div class="item flex-2">ABCSS</div>
+                <div class="item flex-2">ABCSS</div>
+                <div class="item flex-2">ABCSS</div>
+            </div>
+
+            <p>width ignorado -> basis =0</p>
+            <div class="flex-container">
+                <div class="item flex-1">ABCSS</div>
+                <div class="item flex-1">ABCSS</div>
+                <div class="item flex-1">ABCSS</div>
+                <div class="item flex-1">ABCSS</div>
+            </div>
+        </section>
+    </body>
+</html>
