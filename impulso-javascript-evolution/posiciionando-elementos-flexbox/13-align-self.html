@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fundamentos - align-self</title>
+
+        <style>
+            .flex-container {
+                max-width: 350px;
+                border: 1px solid black;
+                margin-bottom: 10px;
+                display: flex;
+
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .item {
+                background-color: brown;
+                color: white;
+                font-size: 24px;
+                text-align: center;
+                margin: 5px;
+                word-break: break-word;
+                overflow-wrap: break-word;
+            }
+
+            .center {
+                align-self: center;
+            }
+            .start {
+                align-self: flex-start;
+            }
+
+            .end {
+                align-self: flex-end;
+            }
+
+            .baseline {
+                align-self: baseline;
+            }
+
+            .stretch {
+                align-self: stretch;
+            }
+
+            .auto {
+                align-self: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="flex-container">
+                <div class="item start">ABCSS</div>
+                <div class="item center">ABCSS</div>
+                <div class="item end">ABCSS</div>
+                <div class="item auto">
+                    ABCSS kkjadkab a aisjdiashd ashdjah asdh jdkaskdjb
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
