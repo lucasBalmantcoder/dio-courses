@@ -1,0 +1,22 @@
+{
+    "name": "objetosenuminterface",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "npm run build && lite-server"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "dotenv": "^17.2.4"
+    },
+    "devDependencies": {
+        "lite-server": "^2.6.1",
+        "tsup": "^8.5.1",
+        "typescript": "^5.9.3"
+    }
+}
